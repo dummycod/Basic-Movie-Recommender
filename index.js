@@ -77,7 +77,7 @@ function getSimilarity(prefs, movie1, movie2) {
 }
 
 function getMoviesStatsList() {
-  const userContent = fs.readFileSync("datasets/ratings.json");
+  const userContent = fs.readFileSync("ratings.json");
   const users = JSON.parse(userContent);
   const moviesList = getMoviesList();
 
@@ -96,7 +96,7 @@ function getMoviesStatsList() {
 }
 
 function getMoviesList() {
-  const contents = fs.readFileSync("datasets/movies.json");
+  const contents = fs.readFileSync("movies.json");
   const movies = JSON.parse(contents);
   const moviesList = {};
 
